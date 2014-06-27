@@ -1,0 +1,45 @@
+.css-div-table-1 {
+    position: absolute;
+    top: 340px;
+    width: 339px;
+    height: 430px;
+    border: 1px solid black;
+}
+
+.css-div-table-2 {
+    position: absolute;
+    top: 340px;
+    left: 350px;
+    width: 339px;
+    height: 430px;
+    border: 1px solid black;
+}
+
+.css-table {
+    position: absolute;
+    top: 125px;
+    height: 300px;
+    width: 300px;
+    display: block;
+}
+
+.css-list-button {
+    position: absolute;
+    top: 300px;
+    min-width: 200px;
+}
+
+.css-checker {
+    position: absolute;
+    top: 0px;
+}
+
+.css-field {
+    position: absolute;
+    top: 40px;
+}
+
+.css-selector {
+    position: absolute;
+    top: 80px;
+}

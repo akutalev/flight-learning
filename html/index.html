@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Education project</title>
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/errors.css">
+</head>
+<body>
+    <form class="js-form css-global-form" action="" method="get">
+        <div class="css-loader loader" hidden="hidden"></div>
+        <div id="form" class="css-form">
+            <select id="url" name="url">
+                <option value="https://api.myjson.com/bins/ycev" selected="selected" >Right response</option>
+                <option value="https://api.myjson.com/bins/19as3">Fail response</option>
+            </select>
+            <div class="js-errors js-url"></div>
+            <br>
+            <input type="text" name="name"/>
+            <div class="js-errors js-name"></div>
+            <br>
+            <input type="submit"/>
+        </div>
+    </form>
+    <div class="js-table css-div-table-1">
+        <div class="css-loader loader" hidden="hidden"></div>
+        <div class="css-checker">
+            <input type="checkbox" name="checker" value="check data"/>
+            <div class="js-errors js-checker"></div>
+        </div>
+        <div class="css-field">
+            <input type="text" name="field"/>
+            <div class="js-errors js-field"></div>
+        </div>
+        <div class="css-selector">
+            <select name="selector">
+                <option value="1" selected="selected" >1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <div class="js-errors js-selector"></div>
+        </div>
+        <table class="js-main-table css-table">
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Second name</th>
+                </tr>
+            </thead>
+            <tbody class="js-table-body"></tbody>
+        </table>
+        <div class="css-list-button">
+            <button class="js-btn-1">prev</button>
+            <button class="js-btn-2">submit</button>
+            <button class="js-btn-3">next</button>
+        </div>
+        <script class="entry-template" type="text/x-handlebars-template">
+            {{#each this}}
+                <tr>
+                    <td>
+                        {{firstName}}
+                    </td>
+                    <td>
+                        {{secondName}}
+                    </td>
+                </tr>
+            {{/each}}
+        </script>
+    </div>
+    <div class="js-table css-div-table-2">
+        <div class="css-loader loader" hidden="hidden"></div>
+        <table class="js-main-table css-table">
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Second name</th>
+                </tr>
+            </thead>
+            <tbody class="js-table-body"></tbody>
+        </table>
+        <div class="css-list-button">
+            <button class="js-btn-1">prev</button>
+            <button class="js-btn-3">next</button>
+        </div>
+        <script class="entry-template" type="text/x-handlebars-template">
+            {{#each this}}
+                <tr>
+                    <td>
+                        {{firstName}}
+                    </td>
+                    <td>
+                        {{secondName}}
+                    </td>
+                </tr>
+            {{/each}}
+        </script>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/flight/1.1.0/flight.min.js"></script>
+    <script src="../js/lib/handlebars.min.js"></script>
+    <script src="../js/mixin/ui/table-data.js"></script>
+    <script src="../js/mixin/ui/form-errors.js"></script>
+    <script src="../js/mixin/data/ajax-data.js"></script>
+    <script src="../js/mixin/ui/spinner.js"></script>
+    <script src="../js/table-component.js"></script>
+    <script src="../js/form-component.js"></script>
+    <script src="../js/initialize.js"></script>
+</body>
+</html>
